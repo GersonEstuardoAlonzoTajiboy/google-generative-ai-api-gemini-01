@@ -3,7 +3,7 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 
 dotenv.config();
 
-const generativeAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY);
+const generativeAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 async function run() {
   const modelAI = generativeAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
